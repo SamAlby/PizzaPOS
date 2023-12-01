@@ -37,7 +37,7 @@ public class Receipt {
         this.total = total;
     }
     public String toString(){
-        return Size + " " + Toppings + " " + Sodas + " " + tax + " " + total;
+        return "Size: "+ Size + ", Toppings: " + Toppings + ", Sodas: " + Sodas + ", tax rate: " + tax + ", total: " + total;
     }
 }
 
