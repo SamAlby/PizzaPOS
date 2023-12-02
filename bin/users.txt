@@ -1,4 +1,3 @@
-name,id,admin
-sam,4442,true
-matt,1234,false
-person,0012,false
+Matt,1234,false,
+Sam,4442,true,
+admin,0012,false,

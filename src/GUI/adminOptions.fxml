@@ -6,9 +6,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<!-- Admin Options Screen -->
+<!-- Generated using JavaFX SceneBuilder -->
+<StackPane fx:controller="GUI.adminOptionsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="modifyUsers" mnemonicParsing="false" prefHeight="100.0" prefWidth="171.0" text="Modify Users" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button onAction="#modifyUsers" fx:id="modifyUsers" mnemonicParsing="false" prefHeight="100.0" prefWidth="171.0" text="Modify Users" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets left="250.0" />
          </StackPane.margin>
@@ -16,7 +18,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="adminBack" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
+      <Button onAction="#adminBack" fx:id="adminBack" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
          <StackPane.margin>
             <Insets bottom="5.0" left="5.0" />
          </StackPane.margin>
@@ -32,7 +34,7 @@
             <Insets top="150.0" />
          </StackPane.margin>
       </Text>
-      <Button fx:id="adminLogout" alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
+      <Button onAction="#adminLogout" fx:id="adminLogout" alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
          <StackPane.margin>
             <Insets right="5.0" top="5.0" />
          </StackPane.margin>
@@ -40,7 +42,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="updatePrices" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Update Prices" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button onAction="#updatePrices" fx:id="updatePrices" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Update Prices" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets right="250.0" />
          </StackPane.margin>

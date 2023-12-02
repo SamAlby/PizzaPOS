@@ -2,6 +2,8 @@
 
 <?import javafx.scene.layout.StackPane?>
 
+<!-- Root Screen -->
+<!-- All pages inherit from this screen -->
 <StackPane fx:id="rootPane"
            xmlns="http://javafx.com/javafx/8.0.60"
            xmlns:fx="http://javafx.com/fxml/1"

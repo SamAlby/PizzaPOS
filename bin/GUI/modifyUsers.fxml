@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -9,9 +10,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane fx:controller="hellofx.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<!-- Modify Users Screen -->
+<!-- Generated using JavaFX SceneBuilder -->
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.modifyUsersController">
    <children>
-      <Button fx:id="BackModifyUser" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
+      <Button fx:id="search" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Search" textAlignment="CENTER">
+         <StackPane.margin>
+            <Insets bottom="300.0" left="825.0" />
+         </StackPane.margin>
+      </Button>
+      <Button fx:id="BackModifyUser" mnemonicParsing="false" onAction="#BackModifyUser" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
          <StackPane.margin>
             <Insets bottom="5.0" left="5.0" />
          </StackPane.margin>
@@ -27,7 +36,7 @@
             <Insets top="150.0" />
          </StackPane.margin>
       </Text>
-      <Button fx:id="LogoutModifyUser" alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
+      <Button fx:id="LogoutModifyUser" alignment="CENTER" mnemonicParsing="false" onAction="#LogoutModifyUser" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
          <StackPane.margin>
             <Insets right="5.0" top="5.0" />
          </StackPane.margin>
@@ -45,12 +54,12 @@
             <Insets right="600.0" top="75.0" />
          </StackPane.margin>
       </TextField>
-      <Button fx:id="SubmitNewUser" layoutX="15.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Submit">
+      <Button fx:id="SubmitNewUser" layoutX="15.0" layoutY="705.0" mnemonicParsing="false" onAction="#SubmitNewUser" prefHeight="50.0" prefWidth="150.0" text="Submit">
          <font>
             <Font size="24.0" />
          </font>
          <StackPane.margin>
-            <Insets right="600.0" top="200.0" />
+            <Insets right="600.0" top="300.0" />
          </StackPane.margin>
       </Button>
       <Text layoutX="546.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New User">
@@ -63,11 +72,12 @@
       </Text>
       <TableView fx:id="UserTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
         <columns>
-          <TableColumn prefWidth="150.0" text="C1" />
-          <TableColumn prefWidth="150.0" text="C2" />
+          <TableColumn prefWidth="100.0" text="UserName" />
+          <TableColumn prefWidth="100.0" text="ID" />
+          <TableColumn prefWidth="100.0" text="Permissions" />
         </columns>
          <StackPane.margin>
-            <Insets left="600.0" />
+            <Insets left="600.0" top="100.0" />
          </StackPane.margin>
       </TableView>
       <Button fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Delete User" textAlignment="CENTER" wrapText="true">
@@ -75,8 +85,21 @@
             <Font size="23.0" />
          </font>
          <StackPane.margin>
-            <Insets left="600.0" top="400.0" />
+            <Insets left="600.0" top="500.0" />
          </StackPane.margin>
       </Button>
+      <CheckBox fx:id="adminCheck" mnemonicParsing="false" text="Administrator?">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <StackPane.margin>
+            <Insets right="600.0" top="175.0" />
+         </StackPane.margin>
+      </CheckBox>
+      <TextField fx:id="enterSearch" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="225.0" promptText="Search...">
+         <StackPane.margin>
+            <Insets bottom="300.0" left="525.0" />
+         </StackPane.margin>
+      </TextField>
    </children>
 </StackPane>

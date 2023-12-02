@@ -1,3 +1,5 @@
+package GUI;
+
 public class Receipt {
     String Size = null;
     String[] Toppings = null;

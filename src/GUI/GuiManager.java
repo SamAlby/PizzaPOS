@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import java.io.IOException;
 
+// GuiManager.java - a class that manages changing windows based on the root FXML
+
 public class GuiManager {
 
   private StackPane rootPane;
