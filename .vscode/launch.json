@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Launch App",
             "request": "launch",
-            "mainClass": "hellofx.Main",
+            "mainClass": "GUI.Main",
             "vmArgs": "--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml"
         }
     ]
