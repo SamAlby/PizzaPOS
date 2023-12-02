@@ -2,17 +2,16 @@ package hellofx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.Button;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 //import java.awt.event.KeyEvent;
 
-public class Controller extends Main {
+public class loginController extends Main {
 
     @FXML
     private PasswordField passfield;
-    private Button logoutCreateOrder;
+    
 
     public static boolean isInteger(String str) {
         if (str == null) {
@@ -61,8 +60,4 @@ public class Controller extends Main {
         });
     }
 
-    @FXML
-    private void logOut() {
-        GuiManager.getInstance().changeWindow("hellofx.fxml");
-    }
 }
