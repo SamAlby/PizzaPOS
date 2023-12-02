@@ -1,16 +1,61 @@
 package hellofx;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+//import java.awt.event.KeyEvent;
 
 public class Controller {
 
     @FXML
-    private Label label;
+    private PasswordField passfield;
 
-    public void initialize() {
-        String javaVersion = System.getProperty("java.version");
-        String javafxVersion = System.getProperty("javafx.version");
-        label.setText("Hello, JavaFX " + javafxVersion + "\nRunning on Java " + javaVersion + ".");
+    public static boolean isInteger(String str) {
+        if (str == null) {
+            return false;
+        }
+        int length = str.length();
+        if (length == 0) {
+            return false;
+        }
+        int i = 0;
+        if (str.charAt(0) == '-') {
+            if (length == 1) {
+                return false;
+            }
+            i = 1;
+        }
+        for (; i < length; i++) {
+            char c = str.charAt(i);
+            if (c < '0' || c > '9') {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+
+    public void initialize() throws Exception {
+        //Scanner sc = new Scanner(new File("src/users.txt"));
+
+        passfield.textProperty().addListener((observable, oldValue, newValue) -> {
+            try{
+            Scanner sc = new Scanner(new File("src/users.txt"));
+            sc.useDelimiter(",");
+            while (sc.hasNext())
+            {
+                String x=sc.next();
+                if(isInteger(x) && Integer.parseInt(x)==Integer.parseInt(newValue))
+                    System.out.println("success");
+            }
+            }catch(Exception FileNotFoundException)
+            {
+            }
+            if(passfield.getLength()==4)
+                passfield.setText("");
+        });
     }
 }
