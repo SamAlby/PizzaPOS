@@ -45,17 +45,20 @@ public class Controller {
             try{
             Scanner sc = new Scanner(new File("src/users.txt"));
             sc.useDelimiter(",");
-            while (sc.hasNext())
+            if(!newValue.equals(""))
             {
-                String x=sc.next();
-                if(isInteger(x) && Integer.parseInt(x)==Integer.parseInt(newValue))
-                    System.out.println("success");
+                while (sc.hasNext())
+                {
+                    String x=sc.next();
+                    if(isInteger(x) && x.equals(newValue))
+                        System.out.println("success");
+                }
             }
             }catch(Exception FileNotFoundException)
             {
             }
             if(passfield.getLength()==4)
-                passfield.setText("");
+                javafx.application.Platform.runLater(() -> {passfield.clear();});
         });
     }
 }
