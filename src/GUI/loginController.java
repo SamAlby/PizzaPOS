@@ -1,4 +1,4 @@
-package hellofx;
+package GUI;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;

@@ -1,9 +1,8 @@
-package hellofx;
+package GUI;
 
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-//import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -23,7 +22,7 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.setTitle("PizzaPOS");
             primaryStage.show();
-            guiModel.changeWindow("hellofx.fxml");
+            guiModel.changeWindow("login.fxml");
         } catch (IOException exception) {
             exception.printStackTrace();
         }

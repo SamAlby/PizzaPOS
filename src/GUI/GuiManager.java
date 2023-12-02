@@ -1,4 +1,4 @@
-package hellofx;
+package GUI;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
