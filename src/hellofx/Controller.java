@@ -2,16 +2,17 @@ package hellofx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
-
+import javafx.scene.control.Button;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 //import java.awt.event.KeyEvent;
 
-public class Controller {
+public class Controller extends Main {
 
     @FXML
     private PasswordField passfield;
+    private Button logoutCreateOrder;
 
     public static boolean isInteger(String str) {
         if (str == null) {
@@ -36,11 +37,8 @@ public class Controller {
         }
         return true;
     }
-    
 
     public void initialize() throws Exception {
-        //Scanner sc = new Scanner(new File("src/users.txt"));
-
         passfield.textProperty().addListener((observable, oldValue, newValue) -> {
             try{
             Scanner sc = new Scanner(new File("src/users.txt"));
@@ -50,15 +48,21 @@ public class Controller {
                 while (sc.hasNext())
                 {
                     String x=sc.next();
-                    if(isInteger(x) && x.equals(newValue))
-                        System.out.println("success");
+                    if(isInteger(x) && x.equals(newValue)){
+                        GuiManager.getInstance().changeWindow("createOrder.fxml");
+                    }
                 }
             }
-            }catch(Exception FileNotFoundException)
+            }catch(FileNotFoundException e)
             {
             }
             if(passfield.getLength()==4)
                 javafx.application.Platform.runLater(() -> {passfield.clear();});
         });
+    }
+
+    @FXML
+    private void logOut() {
+        GuiManager.getInstance().changeWindow("hellofx.fxml");
     }
 }
