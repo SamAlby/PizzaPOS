@@ -21,6 +21,7 @@ public class Main extends Application {
             Scene scene = new Scene(rootPane);
             primaryStage.setScene(scene);
             primaryStage.setTitle("PizzaPOS");
+            primaryStage.setMaximized(true);
             primaryStage.show();
             guiModel.changeWindow("login.fxml");
         } catch (IOException exception) {
