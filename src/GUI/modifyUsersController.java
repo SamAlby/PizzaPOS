@@ -131,7 +131,17 @@ public class modifyUsersController extends Main implements Initializable {
                 if (!pinEdit.getText().equals("")) { // if the pin isn't blank
                     // create a user based off the edit
                     user user = new user(EditUserName.getText(), pinEdit.getText(), adminEdit.isSelected()); 
-                    if (!isInteger(user.getId()) || user.getId().length() != 4) { // if its not a 4 digit number
+                    List<user> userList = fetchUsers(); // get users from the database
+                    boolean matchedPin = false;
+                    for (int i = 0; i < userList.size(); i++) { // for every user in the database
+                        if (user.getId().equals(userList.get(i).getId()) && !user.getName().equals(userList.get(i).getName())) { // if the pin matches
+                            matchedPin = true; // set match to true
+                        }
+                    }
+                    if (matchedPin) {
+                        Popup popup = popUp("This pin has been taken"); // let the user know the pin is taken
+                        popup.show(primStage);
+                    }else if (!isInteger(user.getId()) || user.getId().length() != 4) { // if its not a 4 digit number
                         Popup popup = popUp("Please enter a 4 digit pin"); // let the user know
                         popup.show(primStage);
                     } else { // if the inputs are correct
