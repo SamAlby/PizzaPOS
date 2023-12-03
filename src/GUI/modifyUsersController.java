@@ -104,13 +104,8 @@ public class modifyUsersController extends Main implements Initializable {
         boolean userFound = false; // keeps track of if the user has been found
         List<user> foundUsers = new ArrayList<user>();
         for (int i = 0; i < userList.size(); i++) { // for every user in the database
-            if ((userName.equals(userList.get(i).getName()) || userName.equals(userList.get(i).getId()))) { // if a user
-                                                                                                            // hasn't
-                                                                                                            // been
-                                                                                                            // found,
-                                                                                                            // and the
-                                                                                                            // name or
-                                                                                                            // id match
+            // if a user hasn't been found, and the name or id match
+            if ((userName.equals(userList.get(i).getName()) || userName.equals(userList.get(i).getId()))) {
                 foundUsers.add(userList.get(i)); // add each found user to the list of found users
                 userFound = true; // mark that at least one user was found
             } else if (!userFound && i == userList.size() - 1) { // if a user wasn't found
@@ -191,9 +186,8 @@ public class modifyUsersController extends Main implements Initializable {
     // set the table with all current users in the database
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ObservableList<user> observableList = FXCollections.observableArrayList(fetchUsers()); // create the list of
-                                                                                               // objects to add to
-                                                                                               // table
+        // create the list of objects to add to table
+        ObservableList<user> observableList = FXCollections.observableArrayList(fetchUsers());
         UserName.setCellValueFactory(new PropertyValueFactory<>("Name")); // ties the name column to user names
         ID.setCellValueFactory(new PropertyValueFactory<>("Id")); // same but for id column
         Permissions.setCellValueFactory(new PropertyValueFactory<>("Admin")); // same but for admin column
@@ -215,8 +209,8 @@ public class modifyUsersController extends Main implements Initializable {
         List<user> users = new ArrayList<user>(); // create a list of users
         for (int i = 0; i < userNames.size(); i++) { // for each user
             curr = userNames.get(i).split(","); // split up their attributes
-            users.add(new user(curr[0], curr[1], Boolean.valueOf(curr[2]))); // create a user obj out of them and add it
-                                                                             // to the user list
+            // create a user obj out of them and add it to the user list
+            users.add(new user(curr[0], curr[1], Boolean.valueOf(curr[2])));
         }
         return users; // return the list of user objs
     }
@@ -226,8 +220,8 @@ public class modifyUsersController extends Main implements Initializable {
         List<user> userList = fetchUsers(); // get the list of users
 
         // for each user
-        boolean userDeleted = false; // makes sure we only delete one user, so that exact duplicates don't all get
-                                     // deleted
+         // makes sure we only delete one user, so that exact duplicates don't all get deleted
+        boolean userDeleted = false; 
         for (int i = 0; i < userList.size(); i++) {
             if ((user.getName().equals(userList.get(i).getName())) && (user.getId().equals(userList.get(i).getId()))
                     && (user.getAdmin() == userList.get(i).getAdmin()) && !userDeleted) { // if their attributes match
