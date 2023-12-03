@@ -75,7 +75,9 @@ public class modifyUsersController extends Main implements Initializable {
             EnterPin.clear();
             adminCheck.setSelected(false);
             // update the table
-            initialize(null, null);
+            String search = enterSearch.getText();
+            if (search.equals(""))
+                initialize(null, null);
         }
     }
 
@@ -92,12 +94,11 @@ public class modifyUsersController extends Main implements Initializable {
         String userName = enterSearch.getText(); // get the entered value
         List<user> userList= fetchUsers(); // get users from the database
         boolean userFound = false; // keeps track of if the user has been found
+        List<user> foundUsers = new ArrayList<user>();
         for (int i = 0; i < userList.size(); i++){ // for every user in the database
-            if ((userName.equals(userList.get(i).getName()) || userName.equals(userList.get(i).getId())) && !userFound){ // if a user hasn't been found, and the name or id match
-                // populate the table with just the found user
-                ObservableList<user> observableList = FXCollections.observableArrayList(userList.get(i)); 
-                UserTable.setItems(observableList); // pushes the data into the table
-                userFound = true; 
+            if ((userName.equals(userList.get(i).getName()) || userName.equals(userList.get(i).getId()))){ // if a user hasn't been found, and the name or id match
+                foundUsers.add(userList.get(i)); // add each found user to the list of found users
+                userFound = true; // mark that at least one user was found
             }else if (!userFound && i == userList.size()-1){ // if a user wasn't found
                 initialize(null, null); // reset the table
                 if (!userName.equals("")){ // if the search bar wasn't blank
@@ -106,7 +107,12 @@ public class modifyUsersController extends Main implements Initializable {
                 }
             }
         }
+        if (userFound){ // if a user was found
+            // populate table with list of found users
+            ObservableList<user> observableList = FXCollections.observableArrayList(foundUsers); 
+            UserTable.setItems(observableList); // pushes the data into the table
     }
+}
     
     // set the table with all current users in the database
     @Override
@@ -118,7 +124,7 @@ public class modifyUsersController extends Main implements Initializable {
         UserTable.setItems(observableList); // pushes the data into the table
     }
 
-    // fetches a list of the users from the data base
+    // fetches a list of user objects from the users from the data base 
     private static List<user> fetchUsers() {
         List<String> userNames = new ArrayList<>(); // create a list to hold the users
         try {
