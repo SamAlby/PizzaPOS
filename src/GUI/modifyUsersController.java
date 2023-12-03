@@ -47,7 +47,17 @@ public class modifyUsersController extends Main implements Initializable {
         String userName = EnterUserName.getText(); // get the text from the user textbox
         String id = EnterPin.getText(); // get the text from the pin textbox
         Boolean admin = adminCheck.isSelected(); // get the value from the admin check box
-        if (!isInteger(id) || id.length() != 4) { // if its not a 4 digit number
+        List<user> userList = fetchUsers(); // get the list of users in the database
+        boolean matchedPin = false; // keeps track of whether the pin matches any in the database
+        for (int i = 0; i < userList.size(); i++){ // for every user in the database
+            if (id.equals(userList.get(i).getId())){ // if the pin matches 
+                matchedPin = true; // set match to true
+                }
+        }
+        if (matchedPin){
+            Popup popup = popUp("This pin has been taken"); // let the user know the pin is taken
+            popup.show(primStage); 
+        }else if (!isInteger(id) || id.length() != 4) { // if its not a 4 digit number
             Popup popup = popUp("Please enter a 4 digit pin"); // let the user know
             popup.show(primStage);
         } else if (userName.equals("")) { // if the username box is blank
@@ -97,6 +107,8 @@ public class modifyUsersController extends Main implements Initializable {
             }
         }
     }
+    
+    // set the table with all current users in the database
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ObservableList<user> observableList = FXCollections.observableArrayList(fetchUsers()); // create the list of objects to add to table
