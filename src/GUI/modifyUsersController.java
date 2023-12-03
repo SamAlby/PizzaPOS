@@ -26,6 +26,7 @@ public class modifyUsersController extends Main implements Initializable {
     @FXML private TextField EnterUserName;
     @FXML private TextField EnterPin;
     @FXML private CheckBox adminCheck;
+    @FXML private TextField enterSearch;
     @FXML private TableView<user> UserTable;
     @FXML private TableColumn<user, String> UserName;
     @FXML private TableColumn<user, String> ID;
@@ -76,6 +77,26 @@ public class modifyUsersController extends Main implements Initializable {
         initialize(null, null); // refresh table
     }
 
+    // if click search
+    public void Search(){
+        String userName = enterSearch.getText(); // get the entered value
+        List<user> userList= fetchUsers(); // get users from the database
+        boolean userFound = false; // keeps track of if the user has been found
+        for (int i = 0; i < userList.size(); i++){ // for every user in the database
+            if ((userName.equals(userList.get(i).getName()) || userName.equals(userList.get(i).getId())) && !userFound){ // if a user hasn't been found, and the name or id match
+                // populate the table with just the found user
+                ObservableList<user> observableList = FXCollections.observableArrayList(userList.get(i)); 
+                UserTable.setItems(observableList); // pushes the data into the table
+                userFound = true; 
+            }else if (!userFound && i == userList.size()-1){ // if a user wasn't found
+                initialize(null, null); // reset the table
+                if (!userName.equals("")){ // if the search bar wasn't blank
+                    Popup popup = popUp("No results"); // let the user know there were no results
+                    popup.show(primStage);
+                }
+            }
+        }
+    }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ObservableList<user> observableList = FXCollections.observableArrayList(fetchUsers()); // create the list of objects to add to table
