@@ -71,8 +71,8 @@ public class modifyUsersController extends Main implements Initializable {
     public void DeleteUser(){
         int selectedIndex = UserTable.getSelectionModel().getSelectedIndex();
         user currUser = UserTable.getItems().get(selectedIndex);
-        System.out.println(currUser.toString());
-        UserTable.getItems().remove(selectedIndex); 
+        delUser(currUser);
+        initialize(null, null); 
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -101,5 +101,8 @@ public class modifyUsersController extends Main implements Initializable {
         }
         return users; // return the list of user objs
     }
-   
+    // deletes the user from the data base
+    private static void delUser(user user){
+        
+    }
 }
