@@ -85,7 +85,7 @@
             <Font size="23.0" />
          </font>
          <StackPane.margin>
-            <Insets left="900.0" top="500.0" />
+            <Insets left="1050.0" top="500.0" />
          </StackPane.margin>
       </Button>
       <CheckBox fx:id="adminCheck" mnemonicParsing="false" text="Administrator?">
@@ -127,12 +127,20 @@
             <Insets top="175.0" />
          </StackPane.margin>
       </CheckBox>
-      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Submit">
+      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" onAction="#SubmitEdit" prefHeight="50.0" prefWidth="150.0" text="Submit">
          <font>
             <Font size="24.0" />
          </font>
          <StackPane.margin>
             <Insets top="300.0" />
+         </StackPane.margin>
+      </Button>
+      <Button onAction="#EditUser" fx:id="EditUser" layoutX="1025.0" layoutY="635.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Edit User" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="750.0" top="500.0" />
          </StackPane.margin>
       </Button>
    </children>

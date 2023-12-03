@@ -27,6 +27,9 @@ public class modifyUsersController extends Main implements Initializable {
     @FXML private TextField EnterPin;
     @FXML private CheckBox adminCheck;
     @FXML private TextField enterSearch;
+    @FXML private TextField EditUserName;
+    @FXML private TextField pinEdit;
+    @FXML private CheckBox adminEdit;
     @FXML private TableView<user> UserTable;
     @FXML private TableColumn<user, String> UserName;
     @FXML private TableColumn<user, String> ID;
@@ -83,10 +86,15 @@ public class modifyUsersController extends Main implements Initializable {
 
     // if click remove user
     public void DeleteUser() {
-        int selectedIndex = UserTable.getSelectionModel().getSelectedIndex(); // get the current index
-        user currUser = UserTable.getItems().get(selectedIndex); // get the selected user
-        delUser(currUser); // delete the user
-        initialize(null, null); // refresh table
+            int selectedIndex = UserTable.getSelectionModel().getSelectedIndex(); // get the current index
+            if (selectedIndex >= 0){ // if the user selected a row
+                user currUser = UserTable.getItems().get(selectedIndex); // get the selected user
+                delUser(currUser); // delete the user
+                initialize(null, null); // refresh table
+            }else{
+                Popup popup = popUp("Select a user to delete"); // tell the user to select a row
+                popup.show(primStage); 
+            }
     }
 
     // if click search
@@ -114,6 +122,25 @@ public class modifyUsersController extends Main implements Initializable {
     }
 }
     
+    // if click submit edit
+    public void SubmitEdit(){
+
+    }
+
+    // if click edit User
+    public void EditUser(){
+        int selectedIndex = UserTable.getSelectionModel().getSelectedIndex(); // get the current index
+        if (selectedIndex >= 0){ // if the user selected a row
+            user currUser = UserTable.getItems().get(selectedIndex); // get the selected user
+            EditUserName.setText(currUser.getName());
+            pinEdit.setText(currUser.getId());
+            adminEdit.setSelected(currUser.getAdmin());
+        }else{ // if they didnt select a row
+            Popup popup = popUp("Select a user to edit"); // tell the user to select a row
+            popup.show(primStage); 
+        }
+    }
+
     // set the table with all current users in the database
     @Override
     public void initialize(URL location, ResourceBundle resources) {
