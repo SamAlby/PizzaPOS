@@ -175,9 +175,6 @@ public class modifyUsersController extends Main implements Initializable {
             user currUser = UserTable.getItems().get(selectedIndex); // get the selected user
             EditUserName.setText(currUser.getName()); // fill in the text fields
             pinEdit.setText(currUser.getId());
-        } else { // if they didnt select a row
-            Popup popup = popUp("Select a user to edit"); // tell the user to select a row
-            popup.show(primStage);
         }
     }
 
@@ -218,7 +215,7 @@ public class modifyUsersController extends Main implements Initializable {
     }
 
     // deletes the user from the data base
-    private static void delUser(user user) {
+    private void delUser(user user) {
         List<user> userList = fetchUsers(); // get the list of users
         // for each user
         // makes sure we only delete one user, so that exact duplicates don't all get deleted
@@ -243,6 +240,9 @@ public class modifyUsersController extends Main implements Initializable {
             } catch (IOException e) {
             }
         }
+        //Clear the edit fields
+        EditUserName.clear();
+        pinEdit.clear();
 
     }
 }

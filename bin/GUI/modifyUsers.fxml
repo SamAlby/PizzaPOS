@@ -72,7 +72,7 @@
             <Insets bottom="150.0" right="900.0" />
          </StackPane.margin>
       </Text>
-      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
+      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#EditUser" prefHeight="300.0" prefWidth="300.0">
         <columns>
           <TableColumn fx:id="UserName" prefWidth="150.0" text="User Name" />
           <TableColumn fx:id="ID" prefWidth="150.0" text="ID" />
@@ -118,14 +118,6 @@
          </font>
          <StackPane.margin>
             <Insets top="250.0" />
-         </StackPane.margin>
-      </Button>
-      <Button fx:id="EditUser" layoutX="1025.0" layoutY="635.0" mnemonicParsing="false" onAction="#EditUser" prefHeight="50.0" prefWidth="150.0" text="Edit User" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font size="23.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="750.0" top="500.0" />
          </StackPane.margin>
       </Button>
       <Button fx:id="Clear" mnemonicParsing="false" onAction="#Clear" prefHeight="50.0" prefWidth="50.0" text="Clear" textAlignment="CENTER" wrapText="true">
