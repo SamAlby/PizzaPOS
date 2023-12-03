@@ -214,9 +214,11 @@
             <Insets bottom="5.0" right="5.0" />
          </StackPane.margin>
       </Button>
-      <TableView fx:id="OrderTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="150.0" StackPane.alignment="CENTER_RIGHT">
+      <TableView fx:id="OrderTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="375.0" StackPane.alignment="CENTER_RIGHT">
         <columns>
-          <TableColumn prefWidth="150.0" text="Order" />
+          <TableColumn fx:id="size" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="toppings" prefWidth="150.0" text="Toppings" />
+            <TableColumn fx:id="sodas" prefWidth="150.0" text="Sodas" />
         </columns>
          <StackPane.margin>
             <Insets right="5.0" />

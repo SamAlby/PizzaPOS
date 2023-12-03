@@ -24,11 +24,6 @@ public class loginController extends Main {
                     userName = user[0];  //get the user's name       
                     if(isInteger(user[1]) && user[1].equals(newValue)){ //If password field entry matches an ID
                         GuiManager.getInstance().changeWindow("createOrder.fxml"); //Change to next screen
-                        if(Boolean.valueOf(user[2])){ //Check if user is an admin, next user value is always whether they are an admin or not
-                            isAdmin=true; //Set global admin modifier to true
-                        }else{
-                            isAdmin=false; //Set global admin modifier to false
-                        }
                     }
                 }
             }

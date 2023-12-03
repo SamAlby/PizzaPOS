@@ -25,15 +25,12 @@ public class modifyUsersController extends Main implements Initializable {
 
     @FXML private TextField EnterUserName;
     @FXML private TextField EnterPin;
-    @FXML private CheckBox adminCheck;
     @FXML private TextField enterSearch;
     @FXML private TextField EditUserName;
     @FXML private TextField pinEdit;
-    @FXML private CheckBox adminEdit;
     @FXML private TableView<user> UserTable;
     @FXML private TableColumn<user, String> UserName;
     @FXML private TableColumn<user, String> ID;
-    @FXML private TableColumn<user, Boolean> Permissions;
 
     // if click logout, go to login page
     public void LogoutModifyUser() {
@@ -49,7 +46,6 @@ public class modifyUsersController extends Main implements Initializable {
     public void SubmitNewUser() {
         String userName = EnterUserName.getText(); // get the text from the user textbox
         String id = EnterPin.getText(); // get the text from the pin textbox
-        Boolean admin = adminCheck.isSelected(); // get the value from the admin check box
         List<user> userList = fetchUsers(); // get the list of users in the database
         boolean matchedPin = false; // keeps track of whether the pin matches any in the database
         for (int i = 0; i < userList.size(); i++) { // for every user in the database
@@ -69,14 +65,13 @@ public class modifyUsersController extends Main implements Initializable {
         } else {// if the inputs are correct
             try {
                 FileWriter fw = new FileWriter("src/users.txt", true); // open the user database
-                fw.write(userName + ',' + id + ',' + admin + ',' + "\n"); // add the new user
+                fw.write(userName + ',' + id + ',' + "\n"); // add the new user
                 fw.close(); // close the database
             } catch (IOException e) {
             }
             // clear the boxes for the next new user
             EnterUserName.clear();
             EnterPin.clear();
-            adminCheck.setSelected(false);
             // update the table
             String search = enterSearch.getText();
             if (search.equals(""))
@@ -130,7 +125,7 @@ public class modifyUsersController extends Main implements Initializable {
             if (!EditUserName.getText().equals("")) { // if the username isn't blank
                 if (!pinEdit.getText().equals("")) { // if the pin isn't blank
                     // create a user based off the edit
-                    user user = new user(EditUserName.getText(), pinEdit.getText(), adminEdit.isSelected()); 
+                    user user = new user(EditUserName.getText(), pinEdit.getText()); 
                     List<user> userList = fetchUsers(); // get users from the database
                     boolean matchedPin = false;
                     for (int i = 0; i < userList.size(); i++) { // for every user in the database
@@ -149,14 +144,13 @@ public class modifyUsersController extends Main implements Initializable {
                         try {
                             FileWriter fw = new FileWriter("src/users.txt", true); // open the user database
                             // add the new version of the user
-                            fw.write(user.getName() + ',' + user.getId() + ',' + user.getAdmin() + ',' + "\n"); 
+                            fw.write(user.getName() + ',' + user.getId() + ',' + "\n"); 
                             fw.close(); // close the database
                         } catch (IOException e) {
                         }
                         // clear the boxes for the next edit
                         EditUserName.clear();
                         pinEdit.clear();
-                        adminEdit.setSelected(false);
                         // update the table
                         Search();
                     }
@@ -181,7 +175,6 @@ public class modifyUsersController extends Main implements Initializable {
             user currUser = UserTable.getItems().get(selectedIndex); // get the selected user
             EditUserName.setText(currUser.getName()); // fill in the text fields
             pinEdit.setText(currUser.getId());
-            adminEdit.setSelected(currUser.getAdmin());
         } else { // if they didnt select a row
             Popup popup = popUp("Select a user to edit"); // tell the user to select a row
             popup.show(primStage);
@@ -200,7 +193,6 @@ public class modifyUsersController extends Main implements Initializable {
         ObservableList<user> observableList = FXCollections.observableArrayList(fetchUsers());
         UserName.setCellValueFactory(new PropertyValueFactory<>("Name")); // ties the name column to user names
         ID.setCellValueFactory(new PropertyValueFactory<>("Id")); // same but for id column
-        Permissions.setCellValueFactory(new PropertyValueFactory<>("Admin")); // same but for admin column
         UserTable.setItems(observableList); // pushes the data into the table
     }
 
@@ -220,7 +212,7 @@ public class modifyUsersController extends Main implements Initializable {
         for (int i = 0; i < userNames.size(); i++) { // for each user
             curr = userNames.get(i).split(","); // split up their attributes
             // create a user obj out of them and add it to the user list
-            users.add(new user(curr[0], curr[1], Boolean.valueOf(curr[2])));
+            users.add(new user(curr[0], curr[1]));
         }
         return users; // return the list of user objs
     }
@@ -228,29 +220,25 @@ public class modifyUsersController extends Main implements Initializable {
     // deletes the user from the data base
     private static void delUser(user user) {
         List<user> userList = fetchUsers(); // get the list of users
-
         // for each user
-         // makes sure we only delete one user, so that exact duplicates don't all get deleted
+        // makes sure we only delete one user, so that exact duplicates don't all get deleted
         boolean userDeleted = false; 
         for (int i = 0; i < userList.size(); i++) {
             if ((user.getName().equals(userList.get(i).getName())) && (user.getId().equals(userList.get(i).getId()))
-                    && (user.getAdmin() == userList.get(i).getAdmin()) && !userDeleted) { // if their attributes match
+                    && !userDeleted) { // if their attributes match
                 userList.remove(i); // remove the user from the list
                 userDeleted = true;
             }
         }
-
         // delete the database
         File file = new File("src/users.txt");
         file.delete();
-
         // for each user in the list
         for (int i = 0; i < userList.size(); i++) {
             // add it to the database
             try {
                 FileWriter fw = new FileWriter("src/users.txt", true); // open the user database
-                fw.write(userList.get(i).getName() + ',' + userList.get(i).getId() + ',' + userList.get(i).getAdmin()
-                        + ',' + "\n"); // add the new user
+                fw.write(userList.get(i).getName() + ',' + userList.get(i).getId() + ',' + "\n"); // add the new user
                 fw.close(); // close the database
             } catch (IOException e) {
             }

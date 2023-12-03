@@ -1,2 +1,2 @@
-Sam,4442,true,
-Matthew,1234,true,
+Sam,4442,
+Matthew,1234,
