@@ -70,10 +70,13 @@
             <Insets left="90.0" top="10.0" />
          </StackPane.margin>
       </Text>
-      <Text fx:id="welcomeText" strokeType="OUTSIDE" strokeWidth="0.0" text="To be filled" textAlignment="CENTER" StackPane.alignment="BOTTOM_LEFT">
+      <Text fx:id="welcomeText" strokeType="OUTSIDE" strokeWidth="0.0" text="To be filled" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
          <StackPane.margin>
-            <Insets bottom="5.0" left="5.0" />
+            <Insets top="100.0" />
          </StackPane.margin>
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
       </Text>
       <Button fx:id="coke" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Coke" StackPane.alignment="CENTER_LEFT">
          <font>

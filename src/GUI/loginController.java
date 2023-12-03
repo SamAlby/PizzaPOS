@@ -17,31 +17,23 @@ public class loginController extends Main {
         //Add event listener for text being typed into password field
         passfield.textProperty().addListener((observable, oldValue, newValue) -> {
             try{ //Try catch in case users.txt is not found
-            Scanner sc = new Scanner(new File("src/users.txt"));
-            sc.useDelimiter(","); //User attributes are separated by commas
-            if(!newValue.equals("")) //Make sure not to check values if the input is blank, prevents exception
-            {
-                while (sc.hasNext()) //Loop through entirety of user database
-                {
-
-                    String id = sc.next();           
-                    if(isInteger(id) && id.equals(newValue)) //If password field entry matches an ID
-                    { 
+            Scanner sc = new Scanner(new File("src/users.txt")); //open user database
+            if(!newValue.equals("")){ //Make sure not to check values if the input is blank, prevents exception
+                while (sc.hasNextLine()){ //Loop through entirety of user database
+                    String[] user = sc.nextLine().split(",");  //split the line by commas
+                    userName = user[0];  //get the user's name       
+                    if(isInteger(user[1]) && user[1].equals(newValue)){ //If password field entry matches an ID
                         GuiManager.getInstance().changeWindow("createOrder.fxml"); //Change to next screen
-                        if(Boolean.valueOf(sc.next())) //Check if user is an admin, next user value is always whether they are an admin or not
-                        { 
+                        if(Boolean.valueOf(user[2])){ //Check if user is an admin, next user value is always whether they are an admin or not
                             isAdmin=true; //Set global admin modifier to true
-                        }
-                        else
-                        {
+                        }else{
                             isAdmin=false; //Set global admin modifier to false
                         }
                     }
                 }
             }
             sc.close(); //Close Scanner to remove resource leak
-            }catch(FileNotFoundException e) //Catch file not found in case users.txt goes missing
-            {
+            }catch(FileNotFoundException e){ //Catch file not found in case users.txt goes missing
             }
             if(passfield.getLength()==4){ //Reset length of the password field if > 4 digits
                 javafx.application.Platform.runLater(() -> {passfield.clear();}); // runLater() trick to avoid exception in lambda function above

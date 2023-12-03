@@ -15,10 +15,13 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.modifyUsersController">
    <children>
-      <Button fx:id="search" mnemonicParsing="false" onAction="#Search" prefHeight="50.0" prefWidth="75.0" text="Search" textAlignment="CENTER">
+      <Button fx:id="search" mnemonicParsing="false" onAction="#Search" prefHeight="50.0" prefWidth="50.0" text="Search">
          <StackPane.margin>
-            <Insets bottom="300.0" left="1125.0" />
+            <Insets bottom="300.0" left="1100.0" />
          </StackPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
       </Button>
       <Button fx:id="BackModifyUser" mnemonicParsing="false" onAction="#BackModifyUser" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
          <StackPane.margin>
@@ -70,14 +73,14 @@
             <Insets bottom="150.0" right="900.0" />
          </StackPane.margin>
       </Text>
-      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
+      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="325.0">
         <columns>
-          <TableColumn fx:id="UserName" prefWidth="100.0" text="User Name" />
-          <TableColumn fx:id="ID" prefWidth="100.0" text="ID" />
-          <TableColumn fx:id="Permissions" prefWidth="100.0" text="Admin" />
+          <TableColumn fx:id="UserName" prefWidth="125.0" text="User Name" />
+          <TableColumn fx:id="ID" prefWidth="125.0" text="ID" />
+          <TableColumn fx:id="Permissions" prefWidth="75.0" text="Admin" />
         </columns>
          <StackPane.margin>
-            <Insets left="900.0" top="100.0" />
+            <Insets left="925.0" top="100.0" />
          </StackPane.margin>
       </TableView>
       <Button fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="50.0" prefWidth="150.0" text="Delete User" textAlignment="CENTER" wrapText="true">
@@ -85,7 +88,7 @@
             <Font size="23.0" />
          </font>
          <StackPane.margin>
-            <Insets left="1050.0" top="500.0" />
+            <Insets left="1100.0" top="500.0" />
          </StackPane.margin>
       </Button>
       <CheckBox fx:id="adminCheck" mnemonicParsing="false" text="Administrator?">
@@ -127,7 +130,7 @@
             <Insets top="175.0" />
          </StackPane.margin>
       </CheckBox>
-      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" onAction="#SubmitEdit" prefHeight="50.0" prefWidth="150.0" text="Submit">
+      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" onAction="#SubmitEdit" prefHeight="50.0" prefWidth="150.0" text="Save">
          <font>
             <Font size="24.0" />
          </font>
@@ -135,13 +138,21 @@
             <Insets top="300.0" />
          </StackPane.margin>
       </Button>
-      <Button onAction="#EditUser" fx:id="EditUser" layoutX="1025.0" layoutY="635.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Edit User" textAlignment="CENTER" wrapText="true">
+      <Button fx:id="EditUser" layoutX="1025.0" layoutY="635.0" mnemonicParsing="false" onAction="#EditUser" prefHeight="50.0" prefWidth="150.0" text="Edit User" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="23.0" />
          </font>
          <StackPane.margin>
             <Insets left="750.0" top="500.0" />
          </StackPane.margin>
+      </Button>
+      <Button onAction="#Clear" fx:id="Clear" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Clear" textAlignment="CENTER" wrapText="true">
+         <StackPane.margin>
+            <Insets bottom="300.0" left="1200.0" />
+         </StackPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
       </Button>
    </children>
 </StackPane>
