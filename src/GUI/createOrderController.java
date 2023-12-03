@@ -66,7 +66,15 @@ public class createOrderController extends Main implements Initializable {
     
     // remove button clicked
     public void remove(){
-        
+        int selectedIndex = OrderTable.getSelectionModel().getSelectedIndex(); // get the current index
+        if (selectedIndex >= 0) { // if the user selected a row
+            pizza currPizza = OrderTable.getItems().get(selectedIndex); // get the selected user
+            delPizza(currPizza); // delete the user
+            initialize(null, null); // refresh table
+        } else {
+            Popup popup = popUp("Select an order to delete"); // tell the user to select a row
+            popup.show(primStage);
+        }
     }
 
     @Override
@@ -80,6 +88,7 @@ public class createOrderController extends Main implements Initializable {
         OrderTable.setItems(observableList); // pushes the data into the table
     }
 
+    // gets the list of the current pizzas from the data base
     private static List<pizza> fetchPizzas() {
         List<String> pizzas = new ArrayList<>(); // create a list to hold the prices
         try {
@@ -98,5 +107,32 @@ public class createOrderController extends Main implements Initializable {
             Pizzas.add(new pizza(curr[0], curr[1], curr[2]));
         }
         return Pizzas; // return the list of item objs
+    }
+
+    // deletes one pizza from the data base
+    private void delPizza(pizza pizza){
+        List<pizza> pizzaList = fetchPizzas(); // get the list of pizzas
+        // for each pizza
+        // makes sure we only delete one pizza, so that exact duplicates don't all get deleted
+        boolean pizzaDeleted = false; 
+        for (int i = 0; i < pizzaList.size(); i++) {
+            if ((pizza.getSize().equals(pizzaList.get(i).getSize())) && (pizza.getToppings().equals(pizzaList.get(i).getToppings()) && (pizza.getSodas().equals(pizzaList.get(i).getSodas()))) && !pizzaDeleted) { // if their attributes match
+                pizzaList.remove(i); // remove the pizza from the list
+                pizzaDeleted = true;
+            }
+        }
+        // delete the database
+        File file = new File("src/pizzas.txt");
+        file.delete();
+        // for each pizza in the list
+        for (int i = 0; i < pizzaList.size(); i++) {
+            // add it to the database
+            try {
+                FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
+                fw.write(pizzaList.get(i).getSize() + ';' + pizzaList.get(i).getToppings() + ';' + pizzaList.get(i).getSodas() + ";" + "\n"); // add the new pizza
+                fw.close(); // close the database
+            } catch (IOException e) {
+            }
+        }
     }
 }

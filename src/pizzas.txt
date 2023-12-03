@@ -1,12 +1,1 @@
-small;[pepperoni,extra cheese];1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
-None;None;1;
 None;None;1;
