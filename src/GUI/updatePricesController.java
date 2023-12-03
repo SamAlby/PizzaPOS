@@ -63,10 +63,14 @@ public class updatePricesController extends Main implements Initializable {
                 if (!EditPrice.getText().equals("")) { // if the pin isn't blank
                     // create a user based off the edit
                     item item = new item(editName.getText(), EditPrice.getText()); 
-                    if (!isInteger(item.getPrice())) { // if its not a  number
+                    if (!item.getItem().equals("tax rate") && !isInteger(item.getPrice())) { // if its not a number and not tax rate
                         Popup popup = popUp("Please enter a number"); // let the user know
                         popup.show(primStage);
-                    } else { // if the inputs are correct
+                    } else if(item.getItem().equals("tax rate") && !isFloat(item.getPrice())){ // if its not a float
+                        Popup popup = popUp("For tax rate, please enter a decimal"); // let the user know
+                        popup.show(primStage);
+                    }
+                     else { // if the inputs are correct
                         delItem(item); // delete the stored version of the user
                         try {
                             FileWriter fw = new FileWriter("src/prices.txt", true); // open the user database

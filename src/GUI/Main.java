@@ -66,6 +66,33 @@ public static Stage primStage;
         }
         return true;
     }
+
+    public static boolean isFloat(String str) {
+        Boolean cond = false;
+        if (str == null) {
+            return false;
+        }
+        int length = str.length();
+        if (length == 0) {
+            return false;
+        }
+        int i = 0;
+        if (str.charAt(0) == '-') {
+            if (length == 1) 
+                return false;
+            i = 1;
+        }
+        for (; i < length; i++) {
+            char c = str.charAt(i);
+            if (!(c == '.') && (c < '0' || c > '9')) 
+                cond = false;
+            else if(c == '.')
+                cond = true;
+            else if(cond && c == '.')
+                return false;
+        }
+        return cond;
+    }
     
     public static Popup popUp(String text){
         Label label = new Label(text); 
