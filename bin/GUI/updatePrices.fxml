@@ -10,9 +10,10 @@
 
 <!-- Update Prices Screen -->
 <!-- Generated using JavaFX SceneBuilder -->
-<StackPane fx:controller="GUI.updatePricesController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.updatePricesController">
    <children>
-      <Button onAction="#backUpdatePrices" fx:id="backUpdatePrices" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
+      <Button fx:id="backUpdatePrices" mnemonicParsing="false" onAction="#backUpdatePrices" prefHeight="100.0" prefWidth="150.0" text="Back" StackPane.alignment="BOTTOM_LEFT">
          <StackPane.margin>
             <Insets bottom="5.0" left="5.0" />
          </StackPane.margin>
@@ -28,7 +29,7 @@
             <Insets top="100.0" />
          </StackPane.margin>
       </Text>
-      <Button onAction="#logoutUpdatePrices" fx:id="logoutUpdatePrices" alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
+      <Button fx:id="logoutUpdatePrices" alignment="CENTER" mnemonicParsing="false" onAction="#logoutUpdatePrices" prefHeight="100.0" prefWidth="150.0" text="Logout" StackPane.alignment="TOP_RIGHT">
          <StackPane.margin>
             <Insets right="5.0" top="5.0" />
          </StackPane.margin>
@@ -36,7 +37,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <TableView fx:id="UserTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="400.0">
+      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="400.0">
         <columns>
           <TableColumn prefWidth="200.0" text="Item" />
           <TableColumn prefWidth="200.0" text="Price" />

@@ -70,17 +70,17 @@
             <Insets bottom="150.0" right="600.0" />
          </StackPane.margin>
       </Text>
-      <TableView fx:id="UserTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
+      <TableView fx:id="UserTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
         <columns>
-          <TableColumn prefWidth="100.0" text="UserName" />
-          <TableColumn prefWidth="100.0" text="ID" />
-          <TableColumn prefWidth="100.0" text="Permissions" />
+          <TableColumn fx:id="UserName" prefWidth="100.0" text="UserName" />
+          <TableColumn fx:id="ID" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="Permissions" prefWidth="100.0" text="Admin" />
         </columns>
          <StackPane.margin>
             <Insets left="600.0" top="100.0" />
          </StackPane.margin>
       </TableView>
-      <Button fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Delete User" textAlignment="CENTER" wrapText="true">
+      <Button onAction="#DeleteUser" fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Delete User" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="23.0" />
          </font>
