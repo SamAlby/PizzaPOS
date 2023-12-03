@@ -110,10 +110,11 @@ public class modifyUsersController extends Main implements Initializable {
         List<user> userList = fetchUsers(); // get the list of users
         
         // for each user
+        boolean userDeleted = false; // makes sure we only delete one user, so that exact duplicates don't all get deleted
         for (int i = 0; i < userList.size(); i++) {
-            if ((user.getName().equals(userList.get(i).getName())) && (user.getId().equals(userList.get(i).getId())) // if their attributes match the select user
-                    && (user.getAdmin() == userList.get(i).getAdmin())) {
+            if ((user.getName().equals(userList.get(i).getName())) && (user.getId().equals(userList.get(i).getId())) && (user.getAdmin() == userList.get(i).getAdmin()) && !userDeleted) { // if their attributes match
                 userList.remove(i); // remove the user from the list
+                userDeleted = true;
             }
         }
 
