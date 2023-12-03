@@ -2,6 +2,8 @@ package GUI;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.stage.Popup;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -30,6 +33,8 @@ public class createOrderController extends Main implements Initializable {
     private TableColumn<pizza, String> toppings;
     @FXML
     private TableColumn<pizza, String> sodas;
+    @FXML
+    private Button soda;
 
     // Logout button onAction method
     public void logOut() {
@@ -38,7 +43,30 @@ public class createOrderController extends Main implements Initializable {
 
     // Admin options button onAction method
     public void adminOptions() {
-            GuiManager.getInstance().changeWindow("adminOptions.fxml");
+        GuiManager.getInstance().changeWindow("adminOptions.fxml");
+    }
+
+    // Add soda button clicked
+    public void addSoda() {
+        // if adding a soda to an order
+        if (OrderTable.getSelectionModel().getSelectedIndex() >= 0) {
+            //to add, adding sodas to regular orders 
+        } else { // if adding a soda in general
+            pizza pizza = new pizza(null, null, "1");
+            try {
+                FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
+                // add the new pizza
+                fw.write("None;None;" + pizza.getSodas() + ";"+ "\n");
+                fw.close(); // close the database
+            } catch (IOException e) {
+            }
+            initialize(null, null);
+        }
+    }
+    
+    // remove button clicked
+    public void remove(){
+        
     }
 
     @Override
@@ -52,8 +80,8 @@ public class createOrderController extends Main implements Initializable {
         OrderTable.setItems(observableList); // pushes the data into the table
     }
 
-    private static List<pizza> fetchPizzas(){
-         List<String> pizzas = new ArrayList<>(); // create a list to hold the prices
+    private static List<pizza> fetchPizzas() {
+        List<String> pizzas = new ArrayList<>(); // create a list to hold the prices
         try {
             Scanner s = new Scanner(new File("src/pizzas.txt")); // open the prices database
             while (s.hasNextLine()) {

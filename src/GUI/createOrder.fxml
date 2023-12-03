@@ -22,7 +22,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="remove" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Remove" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
+      <Button onAction="#remove" fx:id="remove" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Remove" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
          <font>
             <Font size="23.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="Impact" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="soda" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Coke Product" StackPane.alignment="CENTER_LEFT">
+      <Button onAction="#addSoda" fx:id="soda" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Coke Product" StackPane.alignment="CENTER_LEFT">
          <font>
             <Font size="14.0" />
          </font>
