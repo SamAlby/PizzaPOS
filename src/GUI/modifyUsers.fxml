@@ -56,7 +56,7 @@
             <Insets right="900.0" top="75.0" />
          </StackPane.margin>
       </TextField>
-      <Button fx:id="SubmitNewUser" layoutX="15.0" layoutY="705.0" mnemonicParsing="false" onAction="#SubmitNewUser" prefHeight="50.0" prefWidth="150.0" text="Submit">
+      <Button fx:id="SubmitNewUser" layoutX="15.0" layoutY="705.0" mnemonicParsing="false" onAction="#SubmitNewUser" prefHeight="50.0" prefWidth="125.0" text="Submit">
          <font>
             <Font size="24.0" />
          </font>
@@ -81,14 +81,6 @@
             <Insets left="925.0" top="100.0" />
          </StackPane.margin>
       </TableView>
-      <Button fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="50.0" prefWidth="150.0" text="Delete User" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font size="23.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="1100.0" top="500.0" />
-         </StackPane.margin>
-      </Button>
       <TextField fx:id="enterSearch" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="225.0" promptText="Search...">
          <StackPane.margin>
             <Insets bottom="300.0" left="825.0" />
@@ -112,12 +104,12 @@
             <Insets top="75.0" />
          </StackPane.margin>
       </TextField>
-      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" onAction="#SubmitEdit" prefHeight="50.0" prefWidth="150.0" text="Save">
+      <Button fx:id="SubmitEdit" layoutX="125.0" layoutY="535.0" mnemonicParsing="false" onAction="#SubmitEdit" prefHeight="50.0" prefWidth="125.0" text=" Save">
          <font>
             <Font size="24.0" />
          </font>
          <StackPane.margin>
-            <Insets top="250.0" />
+            <Insets right="150.0" top="250.0" />
          </StackPane.margin>
       </Button>
       <Button fx:id="Clear" mnemonicParsing="false" onAction="#Clear" prefHeight="50.0" prefWidth="50.0" text="Clear" textAlignment="CENTER" wrapText="true">
@@ -127,6 +119,14 @@
          <font>
             <Font size="11.0" />
          </font>
+      </Button>
+      <Button fx:id="DeleteUser" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="50.0" prefWidth="125.0" text="Delete" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="150.0" top="250.0" />
+         </StackPane.margin>
       </Button>
    </children>
 </StackPane>
