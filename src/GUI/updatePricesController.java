@@ -48,11 +48,7 @@ public class updatePricesController extends Main implements Initializable {
         int selectedIndex = priceTable.getSelectionModel().getSelectedIndex(); // get the current index
         if (selectedIndex >= 0) { // if the user selected a row
             item currItem = priceTable.getItems().get(selectedIndex); // get the selected item
-            if (!currItem.getItem().equals("tax rate")){ // if they didn't select tax rate
-            editName.setText(currItem.getItem() + " price"); // fill in the text field with price appended
-            }else{ // they did select tax rate
-                editName.setText(currItem.getItem()); // just change to tax rate
-            }
+            editName.setText(currItem.getItem()); // fill in the text field with price appended
             EditPrice.setText(currItem.getPrice()); // fill in the price of the item
         } else { // if they didnt select a row
             Popup popup = popUp("Select an item to edit"); // tell the user to select a row
@@ -66,12 +62,12 @@ public class updatePricesController extends Main implements Initializable {
         if (selectedIndex >= 0) { // if they selected a row
                 if (!EditPrice.getText().equals("")) { // if the pin isn't blank
                     // create a user based off the edit
-                    item item = new item(priceTable.getItems().get(selectedIndex).getItem(), EditPrice.getText()); 
+                    item item = new item(editName.getText(), EditPrice.getText()); 
                     if (!isInteger(item.getPrice())) { // if its not a  number
                         Popup popup = popUp("Please enter a number"); // let the user know
                         popup.show(primStage);
                     } else { // if the inputs are correct
-                        delItem(); // delete the stored version of the user
+                        delItem(item); // delete the stored version of the user
                         try {
                             FileWriter fw = new FileWriter("src/prices.txt", true); // open the user database
                             // add the new version of the user
@@ -124,16 +120,10 @@ public class updatePricesController extends Main implements Initializable {
         return items; // return the list of item objs
     }
     
-    private void delItem() {
-        int selectedIndex = priceTable.getSelectionModel().getSelectedIndex(); // get the current index
-        if (selectedIndex >= 0) { // if the user selected a row
-            item currItem = priceTable.getItems().get(selectedIndex); // get the selected user
-            delItems(currItem); // delete the user
+    private void delItem(item item) {
+            delItems(item); // delete the user
             initialize(null, null); // refresh table
-        } else {
-            Popup popup = popUp("Select a item to edit"); // tell the user to select a row
-            popup.show(primStage);
-        }
+        
     }
 
      // deletes the item from the data base
