@@ -163,7 +163,7 @@ public class modifyUsersController extends Main implements Initializable {
                 popup.show(primStage);
             }
         } else {
-            Popup popup = popUp("Please select a user to edit"); // if they didn't select a user to edit
+            Popup popup = popUp("Please select a user from the table to edit"); // if they didn't select a user to edit
             popup.show(primStage);
         }
     }

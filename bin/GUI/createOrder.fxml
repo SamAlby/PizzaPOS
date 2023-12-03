@@ -70,7 +70,7 @@
             <Insets left="90.0" top="10.0" />
          </StackPane.margin>
       </Text>
-      <Text fx:id="welcomeText" strokeType="OUTSIDE" strokeWidth="0.0" text="To be filled" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <Text fx:id="welcomeText" strokeType="OUTSIDE" strokeWidth="0.0" text="User" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
          <StackPane.margin>
             <Insets top="100.0" />
          </StackPane.margin>
@@ -78,36 +78,12 @@
             <Font name="Impact" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="coke" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Coke" StackPane.alignment="CENTER_LEFT">
+      <Button fx:id="soda" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Coke Product" StackPane.alignment="CENTER_LEFT">
          <font>
             <Font size="14.0" />
          </font>
          <StackPane.margin>
-            <Insets left="25.0" top="100.0" />
-         </StackPane.margin>
-      </Button>
-      <Button fx:id="sprite" alignment="CENTER" layoutX="60.0" layoutY="435.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Sprite" StackPane.alignment="CENTER_LEFT">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="150.0" top="100.0" />
-         </StackPane.margin>
-      </Button>
-      <Button fx:id="cherryCoke" alignment="CENTER" layoutX="60.0" layoutY="488.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Cherry Coke" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER_LEFT">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="25.0" top="275.0" />
-         </StackPane.margin>
-      </Button>
-      <Button fx:id="Fanta" alignment="CENTER" layoutX="60.0" layoutY="435.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Fanta" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER_LEFT">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="25.0" top="450.0" />
+            <Insets left="65.0" top="300.0" />
          </StackPane.margin>
       </Button>
       <Text layoutX="60.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Toppings" StackPane.alignment="CENTER">
@@ -187,25 +163,9 @@
             <Font size="24.0" />
          </font>
          <StackPane.margin>
-            <Insets bottom="10.0" left="90.0" />
+            <Insets bottom="10.0" left="90.0" top="150.0" />
          </StackPane.margin>
       </Text>
-      <Button fx:id="drPepper" alignment="CENTER" layoutX="35.0" layoutY="598.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Dr. Pepper" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER_LEFT">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="150.0" top="450.0" />
-         </StackPane.margin>
-      </Button>
-      <Button fx:id="Barq" alignment="CENTER" layoutX="60.0" layoutY="435.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Barq's" textAlignment="CENTER" StackPane.alignment="CENTER_LEFT">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <StackPane.margin>
-            <Insets left="150.0" top="275.0" />
-         </StackPane.margin>
-      </Button>
       <Button fx:id="checkout" layoutX="1135.0" layoutY="695.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Checkout" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
          <font>
             <Font size="23.0" />

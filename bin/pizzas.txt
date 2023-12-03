@@ -1,1 +1,1 @@
-small;[pepperoni,extra cheese];[coke,sprite];
+small;[pepperoni,extra cheese];1;
