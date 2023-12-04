@@ -1,5 +1,6 @@
 package GUI;
 
+import java.io.File;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +18,9 @@ public class Main extends Application {
 public static Stage primStage;
     @Override
     public void start(Stage primaryStage) throws Exception{
+        File file = new File("src/pizzas.txt"); // deletes current pizza order database
+        file.delete(); // only necessary if user didn't use exit button
+        // create gui
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("root.fxml"));
         try{
@@ -30,6 +34,7 @@ public static Stage primStage;
             primaryStage.setMaximized(true);
             primaryStage.show();
             primStage = primaryStage;
+            // open login
             guiModel.changeWindow("login.fxml");
         } catch (IOException exception) {
             exception.printStackTrace();

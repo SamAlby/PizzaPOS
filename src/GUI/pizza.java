@@ -30,4 +30,7 @@ public class pizza {
     public void setSodas(String sodas){
         this.sodas = new SimpleStringProperty(sodas);
     }
+    public String toString(){
+        return size.get() + ";" + toppings.get() + ";" + sodas.get() + ";" + "\n";
+    }
 }

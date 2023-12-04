@@ -13,6 +13,13 @@ public class loginController extends Main {
     
     public static Boolean isAdmin = false; // Global Boolean variable that gets updated when a user logs in as admin
     public static String userName; // Global String variable that gets updated when a user logs in
+    
+    // if user exits software
+    public void exit(){
+        File file = new File("src/pizzas.txt"); // deletes current pizza order database
+        file.delete();
+        primStage.close(); // close the program
+    }
     public void initialize() throws Exception {
         //Add event listener for text being typed into password field
         passfield.textProperty().addListener((observable, oldValue, newValue) -> {

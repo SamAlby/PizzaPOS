@@ -22,7 +22,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button onAction="#remove" fx:id="remove" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Remove" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
+      <Button fx:id="remove" layoutX="275.0" layoutY="485.0" mnemonicParsing="false" onAction="#remove" prefHeight="50.0" prefWidth="150.0" text="Remove" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
          <font>
             <Font size="23.0" />
          </font>
@@ -38,7 +38,7 @@
             <Insets right="5.0" top="75.0" />
          </StackPane.margin>
       </Button>
-      <Button fx:id="small" alignment="CENTER" layoutX="1135.0" layoutY="15.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Small" StackPane.alignment="TOP_LEFT">
+      <Button fx:id="small" alignment="CENTER" layoutX="1135.0" layoutY="15.0" mnemonicParsing="false" onAction="#addSmallPizza" prefHeight="100.0" prefWidth="150.0" text="Small" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="65.0" top="50.0" />
          </StackPane.margin>
@@ -46,7 +46,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="medium" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Medium" StackPane.alignment="TOP_LEFT">
+      <Button fx:id="medium" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#addMediumPizza" prefHeight="100.0" prefWidth="150.0" text="Medium" StackPane.alignment="TOP_LEFT">
          <font>
             <Font size="18.0" />
          </font>
@@ -54,7 +54,7 @@
             <Insets left="65.0" top="155.0" />
          </StackPane.margin>
       </Button>
-      <Button fx:id="large" alignment="CENTER" layoutX="10.0" layoutY="65.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Large" StackPane.alignment="TOP_LEFT">
+      <Button fx:id="large" alignment="CENTER" layoutX="10.0" layoutY="65.0" mnemonicParsing="false" onAction="#addLargePizza" prefHeight="100.0" prefWidth="150.0" text="Large" StackPane.alignment="TOP_LEFT">
          <font>
             <Font size="18.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="Impact" size="24.0" />
          </font>
       </Text>
-      <Button onAction="#addSoda" fx:id="soda" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Coke Product" StackPane.alignment="CENTER_LEFT">
+      <Button fx:id="soda" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" onAction="#addSoda" prefHeight="100.0" prefWidth="150.0" text="Coke Product" StackPane.alignment="CENTER_LEFT">
          <font>
             <Font size="14.0" />
          </font>
@@ -184,5 +184,13 @@
             <Insets right="5.0" />
          </StackPane.margin>
       </TableView>
+      <Button fx:id="clear" layoutX="1135.0" layoutY="685.0" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="150.0" text="Clear" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="75.0" right="175.0" />
+         </StackPane.margin>
+      </Button>
    </children>
 </StackPane>

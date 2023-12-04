@@ -35,6 +35,12 @@ public class createOrderController extends Main implements Initializable {
     private TableColumn<pizza, String> sodas;
     @FXML
     private Button soda;
+    @FXML
+    private Button small;
+    @FXML
+    private Button medium;
+    @FXML
+    private Button large;
 
     // Logout button onAction method
     public void logOut() {
@@ -49,23 +55,55 @@ public class createOrderController extends Main implements Initializable {
     // Add soda button clicked
     public void addSoda() {
         // if adding a soda to an order
-        if (OrderTable.getSelectionModel().getSelectedIndex() >= 0) {
-            //to add, adding sodas to regular orders 
+        int selectedIndex = OrderTable.getSelectionModel().getSelectedIndex(); // get the selected index
+        if (selectedIndex >= 0) { // if they selected a pizza
+            pizza currPizza = OrderTable.getItems().get(selectedIndex); // get the selected pizza
+            delPizza(currPizza); // delete it from the data base
+            if (currPizza.getSodas().equals("none")) { // if it doesn't have a soda
+                currPizza.setSodas("1"); // give it one
+            } else { // add it to the sodas it has
+                int sodas = Integer.parseInt(currPizza.getSodas());
+                sodas += 1;
+                currPizza.setSodas(Integer.toString(sodas)); // add the soda to the pizza
+            }
+            // save it to the database
+            try {
+                FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
+                fw.write(currPizza.toString()); // add the updated pizza
+                fw.close(); // close the database
+            } catch (IOException e) {
+            }
+            initialize(null, null); // refresh the table
         } else { // if adding a soda in general
             pizza pizza = new pizza(null, null, "1");
             try {
                 FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
                 // add the new pizza
-                fw.write("None;None;" + pizza.getSodas() + ";"+ "\n");
+                fw.write("None;None;" + pizza.getSodas() + ";" + "\n");
                 fw.close(); // close the database
             } catch (IOException e) {
             }
             initialize(null, null);
         }
     }
-    
+
+    // small pizza added
+    public void addSmallPizza() {
+        addPizza("small");
+    }
+
+    // medium pizza added
+    public void addMediumPizza() {
+        addPizza("medium");
+    }
+
+    // large pizza added
+    public void addLargePizza() {
+        addPizza("large");
+    }
+
     // remove button clicked
-    public void remove(){
+    public void remove() {
         int selectedIndex = OrderTable.getSelectionModel().getSelectedIndex(); // get the current index
         if (selectedIndex >= 0) { // if the user selected a row
             pizza currPizza = OrderTable.getItems().get(selectedIndex); // get the selected user
@@ -77,6 +115,12 @@ public class createOrderController extends Main implements Initializable {
         }
     }
 
+    // clear button clicked
+    public void clear(){
+        File file = new File("src/pizzas.txt"); // delete the database
+        file.delete();
+        initialize(null, null); // reload the table
+    }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         welcomeText.setText("Welcome " + loginController.userName);
@@ -110,13 +154,17 @@ public class createOrderController extends Main implements Initializable {
     }
 
     // deletes one pizza from the data base
-    private void delPizza(pizza pizza){
+    private void delPizza(pizza pizza) {
         List<pizza> pizzaList = fetchPizzas(); // get the list of pizzas
         // for each pizza
-        // makes sure we only delete one pizza, so that exact duplicates don't all get deleted
-        boolean pizzaDeleted = false; 
+        // makes sure we only delete one pizza, so that exact duplicates don't all get
+        // deleted
+        boolean pizzaDeleted = false;
         for (int i = 0; i < pizzaList.size(); i++) {
-            if ((pizza.getSize().equals(pizzaList.get(i).getSize())) && (pizza.getToppings().equals(pizzaList.get(i).getToppings()) && (pizza.getSodas().equals(pizzaList.get(i).getSodas()))) && !pizzaDeleted) { // if their attributes match
+            if ((pizza.getSize().equals(pizzaList.get(i).getSize()))
+                    && (pizza.getToppings().equals(pizzaList.get(i).getToppings())
+                            && (pizza.getSodas().equals(pizzaList.get(i).getSodas())))
+                    && !pizzaDeleted) { // if their attributes match
                 pizzaList.remove(i); // remove the pizza from the list
                 pizzaDeleted = true;
             }
@@ -129,10 +177,25 @@ public class createOrderController extends Main implements Initializable {
             // add it to the database
             try {
                 FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
-                fw.write(pizzaList.get(i).getSize() + ';' + pizzaList.get(i).getToppings() + ';' + pizzaList.get(i).getSodas() + ";" + "\n"); // add the new pizza
+                fw.write(pizzaList.get(i).getSize() + ';' + pizzaList.get(i).getToppings() + ';'
+                        + pizzaList.get(i).getSodas() + ";" + "\n"); // add the new pizza
                 fw.close(); // close the database
             } catch (IOException e) {
             }
         }
     }
+
+    // pizza added
+    private void addPizza(String size) {
+        pizza newPizza = new pizza(size, "none", "none");
+        try {
+            FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
+            // add the new pizza
+            fw.write(newPizza.toString());
+            fw.close(); // close the database
+        } catch (IOException e) {
+        }
+        initialize(null, null);
+    }
+
 }
