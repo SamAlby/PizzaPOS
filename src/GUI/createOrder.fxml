@@ -93,7 +93,7 @@
             <Insets bottom="200.0" right="200.0" />
          </StackPane.margin>
       </Text>
-      <Button fx:id="pepperoni" onAction="#addPepperoni" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Pepperoni" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="pepperoni" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" onAction="#addPepperoni" prefHeight="75.0" prefWidth="100.0" text="Pepperoni" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets bottom="25.0" right="325.0" />
          </StackPane.margin>
@@ -101,7 +101,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="sausage" onAction="#addSausage" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Sausage" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="sausage" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" onAction="#addSausage" prefHeight="75.0" prefWidth="100.0" text="Sausage" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets bottom="25.0" right="75.0" />
          </StackPane.margin>
@@ -109,7 +109,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="bacon" onAction="#addBacon" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Bacon" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="bacon" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" onAction="#addBacon" prefHeight="75.0" prefWidth="100.0" text="Bacon" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets bottom="25.0" left="175.0" />
          </StackPane.margin>
@@ -117,7 +117,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="onions" onAction="#addOnions" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Onions" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="onions" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" onAction="#addOnions" prefHeight="75.0" prefWidth="100.0" text="Onions" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets bottom="25.0" right="575.0" />
          </StackPane.margin>
@@ -125,7 +125,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="peppers" onAction="#addPeppers" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Peppers" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="peppers" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" onAction="#addPeppers" prefHeight="75.0" prefWidth="100.0" text="Peppers" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets left="175.0" top="150.0" />
          </StackPane.margin>
@@ -133,7 +133,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="pineapple" onAction="#addPineapple" alignment="CENTER" layoutX="763.0" layoutY="135.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Pineapple" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="pineapple" alignment="CENTER" layoutX="763.0" layoutY="135.0" mnemonicParsing="false" onAction="#addPineapple" prefHeight="75.0" prefWidth="100.0" text="Pineapple" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets right="575.0" top="150.0" />
          </StackPane.margin>
@@ -141,7 +141,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="mushrooms" onAction="#addMushrooms" alignment="CENTER" layoutX="463.0" layoutY="135.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Mushrooms" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="mushrooms" alignment="CENTER" layoutX="463.0" layoutY="135.0" mnemonicParsing="false" onAction="#addMushrooms" prefHeight="75.0" prefWidth="100.0" text="Mushrooms" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>
@@ -149,7 +149,7 @@
             <Insets right="325.0" top="150.0" />
          </StackPane.margin>
       </Button>
-      <Button fx:id="extraCheese" onAction="#addExtraCheese" alignment="CENTER" layoutX="563.0" layoutY="135.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Extra Cheese" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+      <Button fx:id="extraCheese" alignment="CENTER" layoutX="563.0" layoutY="135.0" mnemonicParsing="false" onAction="#addExtraCheese" prefHeight="75.0" prefWidth="100.0" text="Extra Cheese" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>
