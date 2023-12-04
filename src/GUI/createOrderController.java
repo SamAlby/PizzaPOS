@@ -15,7 +15,6 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.stage.Popup;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -33,14 +32,6 @@ public class createOrderController extends Main implements Initializable {
     private TableColumn<pizza, String> toppings;
     @FXML
     private TableColumn<pizza, String> sodas;
-    @FXML
-    private Button soda;
-    @FXML
-    private Button small;
-    @FXML
-    private Button medium;
-    @FXML
-    private Button large;
 
     // Logout button onAction method
     public void logOut() {
@@ -121,6 +112,7 @@ public class createOrderController extends Main implements Initializable {
         file.delete();
         initialize(null, null); // reload the table
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         welcomeText.setText("Welcome " + loginController.userName);
@@ -197,5 +189,4 @@ public class createOrderController extends Main implements Initializable {
         }
         initialize(null, null);
     }
-
 }
