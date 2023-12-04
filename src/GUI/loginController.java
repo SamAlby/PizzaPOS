@@ -38,7 +38,7 @@ public class loginController extends Main {
                     }
                 }
             }
-
+            sc.close();
             }catch(FileNotFoundException e){ //Catch file not found in case users.txt goes missing
             }
             if(passfield.getLength()==4){ //Reset length of the password field if > 4 digits
