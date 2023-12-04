@@ -59,7 +59,7 @@
             <Insets right="169.0" top="250.0" />
          </StackPane.margin>
       </Text>
-      <Text fx:id="total" layoutX="569.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
+      <Text fx:id="Total" layoutX="569.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="24.0" />
          </font>
@@ -67,7 +67,7 @@
             <Insets left="200.0" top="150.0" />
          </StackPane.margin>
       </Text>
-      <Text fx:id="tax" layoutX="666.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
+      <Text fx:id="Tax" layoutX="666.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="24.0" />
          </font>
@@ -75,7 +75,7 @@
             <Insets left="200.0" top="200.0" />
          </StackPane.margin>
       </Text>
-      <Text fx:id="grand" layoutX="674.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
+      <Text fx:id="GrandTotal" layoutX="674.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="24.0" />
          </font>
