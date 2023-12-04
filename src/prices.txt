@@ -1,6 +1,6 @@
 toppings,1,
 medium,11,
 large,15,
-small,10,
 tax rate,.06,
 soda,2,
+small,10,
