@@ -231,3 +231,413 @@ Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
 Launcher args:	--module-path "C:\src\PizzaPOS\lib" --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
 Args length:	154/32768 chars
 Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	136/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	136/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	136/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	136/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jre-1.8
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	C:\Program Files\Java\jre-1.8;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-17.0.0.35-hotspot\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Mullvad VPN\resources;C:\Program Files\PowerShell\7\;C:\Users\Dream\AppData\Local\;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--enable_preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	52/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--enable-preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	52/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--enable-preview --module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jre-1.8
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	--enable-preview --module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jre-1.8
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_391 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	35/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	136/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml --enable-preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml --enable-preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	jre
+Check launcher:	C:\src\PizzaPOS\jre\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\src\PizzaPOS\jre\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml --enable-preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	jre
+Check launcher:	C:\src\PizzaPOS\jre\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\src\PizzaPOS\jre\bin\javaw.exe
+Launcher args:	--module-path lib --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml --enable-preview -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	153/32768 chars
+Exit code:	0
