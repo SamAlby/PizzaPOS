@@ -128,13 +128,14 @@ public class modifyUsersController extends Main implements Initializable {
                     // create a user based off the edit
                     user user = new user(EditUserName.getText(), pinEdit.getText()); 
                     List<user> userList = fetchUsers(); // get users from the database
-                    boolean matchedPin = false;
+                    int x = 0;
                     for (int i = 0; i < userList.size(); i++) { // for every user in the database
                         if (user.getId().equals(userList.get(i).getId()) && !user.getName().equals(userList.get(i).getName())) { // if the pin matches
-                            matchedPin = true; // set match to true
+                            x+=1; // set match to true
                         }
                     }
-                    if (matchedPin) {
+
+                    if (x > 1) {
                         Popup popup = popUp("This pin has been taken"); // let the user know the pin is taken
                         popup.show(primStage);
                     }else if (!isInteger(user.getId()) || user.getId().length() != 4) { // if its not a 4 digit number
