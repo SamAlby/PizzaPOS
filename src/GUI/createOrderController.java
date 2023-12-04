@@ -52,6 +52,56 @@ public class createOrderController extends Main implements Initializable {
         GuiManager.getInstance().changeWindow("adminOptions.fxml");
     }
 
+    public void addPepperoni(){
+        addTopping("pepperoni");
+    }
+    public void addOnions(){
+        addTopping("onions");
+    }
+    public void addPineapple(){
+        addTopping("pineapple");
+    }
+    public void addMushrooms(){
+        addTopping("mushrooms");
+    }
+    public void addExtraCheese(){
+        addTopping("extracheese");
+    }
+    public void addSausage(){
+        addTopping("sausage");
+    }
+    public void addBacon(){
+        addTopping("bacon");
+    }
+    public void addPeppers(){
+        addTopping("peppers");
+    }
+
+    public void addTopping(String topping) {
+        // if adding a topping to a pizza
+        int selectedIndex = OrderTable.getSelectionModel().getSelectedIndex(); // get the selected pizza index
+        if (selectedIndex >= 0) { // if they selected a pizza
+            pizza currPizza = OrderTable.getItems().get(selectedIndex); // get the selected pizza
+            delPizza(currPizza); // delete it from the data base
+            if (!currPizza.getToppings().contains(topping)) { // if it doesn't have the topping
+                currPizza.setToppings(currPizza.getToppings()+topping+","); // give it the topping
+            } else { // remove the topping it already has
+                currPizza.setToppings(currPizza.getToppings().replace(topping+",",""));
+            }
+            // save it to the database
+            try {
+                FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
+                fw.write(currPizza.toString()); // add the updated pizza
+                fw.close(); // close the database
+            } catch (IOException e) {
+            }
+            initialize(null, null); // refresh the table
+        } else { // if no row selected
+            Popup popup = popUp("Select a pizza to add toppings to"); // tell the user to select a pizza
+            popup.show(primStage);
+        }
+    }
+
     // Add soda button clicked
     public void addSoda() {
         // if adding a soda to an order
@@ -187,7 +237,7 @@ public class createOrderController extends Main implements Initializable {
 
     // pizza added
     private void addPizza(String size) {
-        pizza newPizza = new pizza(size, "none", "none");
+        pizza newPizza = new pizza(size, "", "0");
         try {
             FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
             // add the new pizza
