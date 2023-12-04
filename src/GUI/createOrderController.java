@@ -133,7 +133,7 @@ public class createOrderController extends Main implements Initializable {
             try {
                 FileWriter fw = new FileWriter("src/pizzas.txt", true); // open the pizza database
                 // add the new pizza
-                fw.write("None;None;" + pizza.getSodas() + ";" + "\n");
+                fw.write(";;" + pizza.getSodas() + ";" + "\n");
                 fw.close(); // close the database
             } catch (IOException e) {
             }
