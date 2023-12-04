@@ -231,3 +231,21 @@ Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
 Launcher args:	--module-path "C:\src\PizzaPOS\lib" --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
 Args length:	154/32768 chars
 Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\src\PizzaPOS\PizzaPOS.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\src\PizzaPOS\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-21
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	--module-path "C:\src\PizzaPOS\lib" --add-modules javafx.graphics,javafx.swing,javafx.controls,javafx.base,javafx.fxml -jar "C:\src\PizzaPOS\PizzaPOS.exe"
+Args length:	154/32768 chars
+Exit code:	0
