@@ -33,9 +33,22 @@ public class createOrderController extends Main implements Initializable {
     @FXML
     private TableColumn<pizza, String> sodas;
 
+    // Checkout button
+    public void checkOut(){
+        List<pizza> pizzas = fetchPizzas(); 
+        if(pizzas.size() > 0){
+            GuiManager.getInstance().changeWindow("checkout.fxml");
+        }else{
+            Popup popup = popUp("Add a pizza to the order"); // tell the user to select a pizza
+            popup.show(primStage);
+        }
+    }
+
     // Logout button onAction method
     public void logOut() {
         GuiManager.getInstance().changeWindow("login.fxml");
+        File file = new File("src/pizzas.txt"); // delete the database
+        file.delete();
     }
 
     // Admin options button onAction method

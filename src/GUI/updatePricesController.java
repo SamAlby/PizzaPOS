@@ -40,6 +40,8 @@ public class updatePricesController extends Main implements Initializable {
     // when logout is pressed
     public void logoutUpdatePrices() {
         GuiManager.getInstance().changeWindow("login.fxml");
+        File file = new File("src/pizzas.txt"); // delete the database
+        file.delete();
     }
     
     // when edit is pressed

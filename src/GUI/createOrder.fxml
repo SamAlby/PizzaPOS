@@ -165,7 +165,7 @@
             <Insets bottom="10.0" left="90.0" top="150.0" />
          </StackPane.margin>
       </Text>
-      <Button fx:id="checkout" layoutX="1135.0" layoutY="695.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Checkout" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
+      <Button onAction="#checkOut" fx:id="checkout" layoutX="1135.0" layoutY="695.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Checkout" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
          <font>
             <Font size="23.0" />
          </font>

@@ -1,11 +1,15 @@
 package GUI;
 
+import java.io.File;
+
 //Controller Class for adminOptions screen
 public class adminOptionsController extends Main {
 
     //Logout button onAction method
     public void adminLogout(){
         GuiManager.getInstance().changeWindow("login.fxml");
+        File file = new File("src/pizzas.txt"); // delete the database
+        file.delete();
     }
     //Back button onAction method
     public void adminBack(){

@@ -34,6 +34,8 @@ public class modifyUsersController extends Main implements Initializable {
     // if click logout, go to login page
     public void LogoutModifyUser() {
         GuiManager.getInstance().changeWindow("login.fxml");
+        File file = new File("src/pizzas.txt"); // delete the database
+        file.delete();
     }
 
     // if click back, go to admin options page

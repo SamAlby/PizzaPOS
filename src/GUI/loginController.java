@@ -33,10 +33,12 @@ public class loginController extends Main {
                         GuiManager.getInstance().changeWindow("createOrder.fxml"); //Change to next screen
                         File file = new File("src/pizzas.txt"); // deletes current pizza order database
                         file.delete();
+                        sc.close(); //Close Scanner to remove resource leak
+                        break;
                     }
                 }
             }
-            sc.close(); //Close Scanner to remove resource leak
+
             }catch(FileNotFoundException e){ //Catch file not found in case users.txt goes missing
             }
             if(passfield.getLength()==4){ //Reset length of the password field if > 4 digits
