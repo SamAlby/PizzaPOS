@@ -31,6 +31,8 @@ public class loginController extends Main {
                     userName = user[0];  //get the user's name       
                     if(isInteger(user[1]) && user[1].equals(newValue)){ //If password field entry matches an ID
                         GuiManager.getInstance().changeWindow("createOrder.fxml"); //Change to next screen
+                        File file = new File("src/pizzas.txt"); // deletes current pizza order database
+                        file.delete();
                     }
                 }
             }
