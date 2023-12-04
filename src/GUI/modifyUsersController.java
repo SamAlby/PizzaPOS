@@ -130,12 +130,12 @@ public class modifyUsersController extends Main implements Initializable {
                     List<user> userList = fetchUsers(); // get users from the database
                     int x = 0;
                     for (int i = 0; i < userList.size(); i++) { // for every user in the database
-                        if (user.getId().equals(userList.get(i).getId()) && !user.getName().equals(userList.get(i).getName())) { // if the pin matches
+                        if (user.getId().equals(userList.get(i).getId()) && i != selectedIndex) { // if the pin matches
                             x+=1; // set match to true
                         }
                     }
 
-                    if (x > 1) {
+                    if (x > 0) {
                         Popup popup = popUp("This pin has been taken"); // let the user know the pin is taken
                         popup.show(primStage);
                     }else if (!isInteger(user.getId()) || user.getId().length() != 4) { // if its not a 4 digit number
