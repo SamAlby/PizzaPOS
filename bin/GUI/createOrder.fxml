@@ -91,12 +91,12 @@
             <Font size="24.0" />
          </font>
          <StackPane.margin>
-            <Insets bottom="200.0" />
+            <Insets bottom="200.0" right="200.0" />
          </StackPane.margin>
       </Text>
       <ToggleButton fx:id="pepperoni" alignment="CENTER" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Pepperoni" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets bottom="25.0" right="125.0" />
+            <Insets bottom="25.0" right="325.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -104,7 +104,7 @@
       </ToggleButton>
       <ToggleButton fx:id="sausage" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Sausage" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets bottom="25.0" left="125.0" />
+            <Insets bottom="25.0" right="75.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -112,7 +112,7 @@
       </ToggleButton>
       <ToggleButton fx:id="bacon" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Bacon" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets bottom="25.0" left="375.0" />
+            <Insets bottom="25.0" left="175.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -120,7 +120,7 @@
       </ToggleButton>
       <ToggleButton fx:id="onions" alignment="CENTER" layoutX="663.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Onions" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets bottom="25.0" right="375.0" />
+            <Insets bottom="25.0" right="575.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -128,7 +128,7 @@
       </ToggleButton>
       <ToggleButton fx:id="peppers" alignment="CENTER" layoutX="563.0" layoutY="60.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Peppers" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets left="375.0" top="150.0" />
+            <Insets left="175.0" top="150.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -136,7 +136,7 @@
       </ToggleButton>
       <ToggleButton fx:id="pineapple" alignment="CENTER" layoutX="763.0" layoutY="135.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Pineapple" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets right="375.0" top="150.0" />
+            <Insets right="575.0" top="150.0" />
          </StackPane.margin>
          <font>
             <Font size="14.0" />
@@ -147,7 +147,7 @@
             <Font size="14.0" />
          </font>
          <StackPane.margin>
-            <Insets right="125.0" top="150.0" />
+            <Insets right="325.0" top="150.0" />
          </StackPane.margin>
       </ToggleButton>
       <ToggleButton fx:id="extraCheese" alignment="CENTER" layoutX="563.0" layoutY="135.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Extra Cheese" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
@@ -155,7 +155,7 @@
             <Font size="14.0" />
          </font>
          <StackPane.margin>
-            <Insets left="125.0" top="150.0" />
+            <Insets right="75.0" top="150.0" />
          </StackPane.margin>
       </ToggleButton>
       <Text layoutX="60.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Soda" StackPane.alignment="CENTER_LEFT">
@@ -174,16 +174,6 @@
             <Insets bottom="5.0" right="5.0" />
          </StackPane.margin>
       </Button>
-      <TableView fx:id="OrderTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="375.0" StackPane.alignment="CENTER_RIGHT">
-        <columns>
-          <TableColumn fx:id="size" prefWidth="75.0" text="Size" />
-            <TableColumn fx:id="toppings" prefWidth="150.0" text="Toppings" />
-            <TableColumn fx:id="sodas" prefWidth="150.0" text="Sodas" />
-        </columns>
-         <StackPane.margin>
-            <Insets right="5.0" />
-         </StackPane.margin>
-      </TableView>
       <Button fx:id="clear" layoutX="1135.0" layoutY="685.0" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="150.0" text="Clear" textAlignment="CENTER" wrapText="true" StackPane.alignment="BOTTOM_RIGHT">
          <font>
             <Font size="23.0" />
@@ -192,5 +182,15 @@
             <Insets bottom="75.0" right="175.0" />
          </StackPane.margin>
       </Button>
+      <TableView fx:id="OrderTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="475.0" StackPane.alignment="CENTER_RIGHT">
+        <columns>
+          <TableColumn fx:id="size" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="toppings" prefWidth="350.0" text="Toppings" />
+            <TableColumn fx:id="sodas" prefWidth="50.0" text="Sodas" />
+        </columns>
+         <StackPane.margin>
+            <Insets right="5.0" />
+         </StackPane.margin>
+      </TableView>
    </children>
 </StackPane>
